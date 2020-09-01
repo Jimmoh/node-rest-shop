@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jimmoh/node-rest-shop/issues"
   },
-  "homepage": "https://github.com/Jimmoh/node-rest-shop#readme"
+  "homepage": "https://github.com/Jimmoh/node-rest-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
