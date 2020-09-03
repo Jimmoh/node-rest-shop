@@ -6,7 +6,11 @@ const orderRoutes = require('./api/routes/orders');
 
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
+mongoose.connect('mongodb+srv://James:' + process.env.MONGO_ATLAS_PW +
+ '@node-rest-shop.xjkgt.mongodb.net/<dbname>?retryWrites=true&w=majority', 
+ { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
